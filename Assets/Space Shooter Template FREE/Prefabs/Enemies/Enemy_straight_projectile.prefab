@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 114640587493707362}
   - component: {fileID: 50267448758737772}
   - component: {fileID: 7887195602917785992}
+  - component: {fileID: -1138662633540554883}
   m_Layer: 6
   m_Name: Enemy_straight_projectile
   m_TagString: Enemy
@@ -213,3 +214,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::EnemyHealth
   explosionPrefab: {fileID: 1280240331523082, guid: 45ae5851ef2832044bba82850372d67b,
     type: 3}
+  defaultHealthPoint: 2
+--- !u!114 &-1138662633540554883
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1373690366928948}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2ca46b4a93b4f4c4f8c7343f0cec094d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EnemyAutoShoot
+  projectilePrefab: {fileID: 1373690366928948}
+  firstShotDelay: 0.5
+  shootInterval: 1
